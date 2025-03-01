@@ -5,5 +5,6 @@ edition = "2021" # Версія Rust edition
 
 # Додайте залежності
 [dependencies]
+[target.'cfg(target_os = "linux")'.dependencies]
 rppal = "0.15" # Бібліотека для керування GPIO
 chrono = "0.4" # Бібліотека для роботи з часом
